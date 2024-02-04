@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #191919;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.container {
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+    position: relative;
+}
+
+.head-section{
+    background-color: #0d0d0d; 
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-section>h2{
+    color: #4ea8de;  
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    font-size: 35px;
+    font-weight: 900;
+    background-color: transparent;
+}
+.head-section>h2>span{
+    color: #5e60ce;
+    background-color: transparent;
+}
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 10px;
+    position: absolute;
+    top: 28%;
+    left: 32%;
+}
+.form>input {
+    background-color: #808080;
+    border: none;
+    outline: none;
+    background-color: #262626;
+    color: #808080;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.form>button {
+    background-color: #1e6f9f;
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.main{
+    background-color: #191919;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    margin: 20px 0;
+    padding: 10px;   
+}
+
+
+section{
+    background-color: #191919;
+}
+section>h4{
+    color: #4ea8de;
+}
+
+.task-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #262626;
+    width: 65%;
+    background-color: 262626;
+    border-radius: 15px;
+    position: relative;
+}
+
+.task-card>span {
+    color: #f2f2f2;
+    text-decoration: line-through;
+}
+.task-card>p {
+    color: #f2f2f2;
+    font-size: 16px;
+    background-color: #262626;
+}
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #4ea8de;
+    background-color: #262626;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.checkbox:checked::after {
+    content: "✔";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #585abd;
+    color: white;
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.delete {
+    position: absolute;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    color: #808080;
+    background-color: #262626;
+}
+.delete:hover {
+    color: red;
+    cursor: pointer;
+}
